@@ -23,7 +23,7 @@ public:
         
         for(int i = pos; i < candidates.size() && candidates[i] <= target; i++)
         {
-			//重复元素不选择
+		//閲嶅鍏冪礌涓嶉�夋嫨	
             if(i > pos && candidates[i] == candidates[i-1])
             {
                 continue;
