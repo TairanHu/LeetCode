@@ -22,7 +22,7 @@ public:
         head = Node->next;
         while(Node && Node->next)
         {
-            //ÐèÒª¼ÇÂ¼Ç°Çý½áµã
+            //éœ€è¦è®°å½•å‰é©±ç»“ç‚¹
             tmp_pre->next = Node->next;
             
             Node->next = Node->next->next;
