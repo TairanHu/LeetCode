@@ -1,5 +1,5 @@
 
-//�Ƚϴֲ�
+//比较粗糙
 
 class Solution {
 public:
