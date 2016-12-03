@@ -1,7 +1,7 @@
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
-        //使用迭代器会超时
+        //浣跨敤杩唬鍣ㄤ細瓒呮椂
         /*for(vector<int>::iterator it = nums.begin(); it != nums.end(); it++)
         {
             if(it != nums.begin() && *it == *(--it))
