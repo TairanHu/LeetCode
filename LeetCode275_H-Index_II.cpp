@@ -1,13 +1,22 @@
 class Solution {
 public:
     int hIndex(vector<int>& citations) {
-        
-        for(int i = 0; i < citations.size(); i++)
+
+        int l = 0;
+        int r = citations.size();
+
+        while(l < r)
         {
-            if(citations.size()-i <= citations[i])
-                return citations.size()-i;
+            int mid = l + (r-l)/2;
+            if(citations.size()-mid == citations[mid])
+                return citations.size()-mid;
+            else if(citations.size()-mid < citations[mid])
+                r = mid;
+            else
+                l = mid + 1;
         }
-        return 0;
-        
+
+        return citations.size() - l;
+
     }
 };
