@@ -5,6 +5,9 @@ public:
         long long res = 1;
         for(int i = 0; i < b.size(); i++)
         {
+			//(a + b) % p = (a%p + b%p) %p
+			//(a - b) % p = (a%p - b%p) %p
+			//(a * b) % p = (a%p * b%p) %p
             res = power(res, 10) * power(a, b[i]) % 1337;
         }
         
